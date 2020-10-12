@@ -1,10 +1,12 @@
 # 04-Survey_Page_Poll
+
 The drop down value element can be easily accessed and broken down
 
-# The approach
+## The approach
 
-1.Go to http://192.168.101.204/index.php?page=survey
-2.Click and inspect one of the drop down buttons
+-Go to http://192.168.101.204/index.php?page=
+
+-Click and inspect one of the drop down buttons
 
 
 ```bash
@@ -21,12 +23,15 @@ The drop down value element can be easily accessed and broken down
 						<option value="10">10</option>
 					</select>
 ```
-3.Click the select element and under options element change the value and title to a integer more 10.
-4.Fine the modified option again and select it to get the flag
+-Click the select element and under options element change the value and title to a integer more 10.
 
-# The Exploit #
+-Fine the modified option again and select it to get the flag
+
+## The Exploit #
+
 - variables that are passed into the url (html get request) are very simple to manipulate directly in the browser. With a post request its complex but can lead to unwanted behavior
 
 
 ## The solution
+
 - User data must always be validated before processing it.

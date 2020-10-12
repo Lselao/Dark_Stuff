@@ -2,12 +2,13 @@
 
 Simple Common Passwords are accepted 
 
-# The approach
+## The approach
 
-1.Go to http://192.168.101.204/
-2.Download brute_force scrips and run them on the password field
+-Go to http://192.168.101.204/
 
-# The Exploit #
+-Download brute_force scrips and run them on the password field
+
+## The Exploit #
 
 Run and loop thru different common passwords with brute_force. if it guess the right pasword grep | and display the flag
 
@@ -21,6 +22,6 @@ Run and loop thru different common passwords with brute_force. if it guess the r
 - Use MD5 to encryp passwords and inclue caps, special characters and numbers
 - dont use common passwords such as 1234
 
-### Resources
+## Resources
 
 List_of_the_most_common_passwords

