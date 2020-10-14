@@ -4,11 +4,11 @@ Page Links are stored on frontend and can be easily edited or exploited
 
 ## The approach
 
--Go to bottom page in the footer area http://192.168.101.204.
+- Go to bottom page in the footer area http://192.168.42.238
 
--Click and Inpect the twitter icon  
+- Click and Inpect the twitter icon  
 
--modify the target link and add more texts to it
+- modify the target link and add more texts to it
 
 ```bash
 <a href="index.php?page=redirect&amp;site=twitter" class="icon fa-twitter"></a>

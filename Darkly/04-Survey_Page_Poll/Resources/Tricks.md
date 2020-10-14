@@ -4,9 +4,9 @@ The drop down value element can be easily accessed and broken down
 
 ## The approach
 
--Go to http://192.168.101.204/index.php?page=
+- Go to http://192.168.42.238/index.php?page=
 
--Click and inspect one of the drop down buttons
+- Click and inspect one of the drop down buttons
 
 
 ```bash
@@ -23,9 +23,9 @@ The drop down value element can be easily accessed and broken down
 						<option value="10">10</option>
 					</select>
 ```
--Click the select element and under options element change the value and title to a integer more 10.
+- Click the select element and under options element change the value and title to a integer more 10.
 
--Fine the modified option again and select it to get the flag
+- Fine the modified option again and select it to get the flag
 
 ## The Exploit #
 
@@ -34,4 +34,4 @@ The drop down value element can be easily accessed and broken down
 
 ## The solution
 
-- User data must always be validated before processing it.
+- User data must always be validated thats passed into forms.

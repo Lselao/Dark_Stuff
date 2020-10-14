@@ -3,17 +3,20 @@ The admin cooking can be modified and its unsafely stored on the front end.
 
 ## The approach
 
--Go to http://192.168.101.204/
+- Go to http://192.168.42.238
 
--Inspect on anypage then select the applications options
+- Inspect on anypage then select the applications options
 
--Under cookies we see the i_am_admin, copy its value 68934a3e9455fa72420237eb05902327 to MD5 and this will return false.
+- Under cookies we see the i_am_admin, copy its value 68934a3e9455fa72420237eb05902327 and decrypt with MD5. this will return false.
+
+- Change and Use MD5 to encrypt the value to true this will modify the cookie 
 
 ## The Exploit #
 
-change the false value to true with MD5 encrypter and then copy the hash value to replace the original cookie value. this will set the cookie value to true and when you refresh the page you will get the flag
+- Cookies can be stolen if users can modify them
 
 ## The solution
+
 - Avoid saving sensitive session information on the browser
 - use session variables in the backend
 - JWT can help wth encrypting such data

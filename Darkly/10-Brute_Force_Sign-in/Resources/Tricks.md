@@ -1,12 +1,12 @@
-# 10-Brute_Force_Login
+# 10-Brute_Force_signin
 
 Simple Common Passwords are accepted 
 
 ## The approach
 
--Go to http://192.168.101.204/
+- Go to http://192.168.42.238
 
--Download brute_force scrips and run them on the password field
+- Download brute_force scrips and run them on the password field
 
 ## The Exploit #
 

@@ -4,12 +4,12 @@ Private email address details are stored in the front-end.
 
 ## The Approach
 
--Go to http://192.168.101.204/?page=recover# 
+- Go to http://192.168.42.238/?page=recover# 
 
--Click and Inspect the submit button on   
+- Click and Inspect the submit button on   
 add more text on the email value to extend the length
  
--Click submit again
+- Click submit again
 
 ## The Exploit #
 
